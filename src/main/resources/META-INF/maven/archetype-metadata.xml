@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor
+        xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
+        name="applauncher"
+        xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <requiredProperties>
+        <requiredProperty key="launcher-name">
+            <defaultValue>launcher</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="entry-point-class">
+            <defaultValue>com.github.igorsuhorukov.groovy.GroovyMain</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="main-artifact-groupId">
+            <defaultValue>com.github.igor-suhorukov</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="main-artifact-artifactId">
+            <defaultValue>groovy-grape-aether</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="main-artifact-version">
+            <defaultValue>2.4.5.4</defaultValue>
+        </requiredProperty>
+    </requiredProperties>
+    <fileSets>
+        <fileSet filtered="true" encoding="UTF-8">
+            <directory>src/main</directory>
+            <includes>
+                <include>**/*.xml</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+</archetype-descriptor>

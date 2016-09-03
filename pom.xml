@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>7</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.github.igor-suhorukov</groupId>
+    <artifactId>daemon-archetype</artifactId>
+    <version>0.1-SNAPSHOT</version>
+    <packaging>maven-archetype</packaging>
+
+    <name>daemon-archetype</name>
+    <description>Daemon-archetype can generate project structure to package your application as daemon or standalone executable app</description>
+
+    <developers>
+        <developer>
+            <name>Igor Sukhorukov</name>
+            <url>http://suhorukov.blogspot.ru</url>
+            <email>igor.suhorukov[skip this] at gmail.com</email>
+        </developer>
+    </developers>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+            <comments>
+                If you are using the generation of a Java Service Wrapper in combination with the
+                Appassembler-Maven-Plugin you must be aware of the license of the Java Service Wrapper Delta package
+                which can be read on the web-site which can be found under the following URL:
+                http://wrapper.tanukisoftware.com/.
+                The change in the license of the Java Service Wrapper Package is also a reason not to upgrade the
+                current used version (3.2.3) of the Java Service Wrapper delta package to a newer version.
+            </comments>
+        </license>
+    </licenses>
+    <scm>
+        <url>https://github.com/igor-suhorukov/daemon-archetype.git</url>
+        <connection>scm:git:git://github.com/igor-suhorukov/daemon-archetype.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/igor-suhorukov/daemon-archetype.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+
+    <build>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.archetype</groupId>
+                <artifactId>archetype-packaging</artifactId>
+                <version>2.2</version>
+            </extension>
+        </extensions>
+
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-archetype-plugin</artifactId>
+                    <version>2.2</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+</project>
